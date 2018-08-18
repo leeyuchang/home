@@ -1,0 +1,12 @@
+<p>
+  add works! {{user?.id}} {{user?.pw}} {{user?.email}} {{user?.phone}} {{user?.name}}
+  <button (click)="backToList()">戻る</button>
+</p>
+
+<hr>
+<form [formGroup]="calcForm">
+  <input formControlName="fieldOne" (keyup)="clearResult()" [class.input-invalid]="fieldOne.invalid" [class.input-valid]="fieldOne.valid">  +
+  <input formControlName="fieldTwo" (keyup)="clearResult()" [class.input-invalid]="fieldTwo.invalid" [class.input-valid]="fieldTwo.valid">
+  <button (click)="addAnyway()">Button</button>
+</form>
+<div>{{result}}</div>

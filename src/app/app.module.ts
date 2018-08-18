@@ -1,16 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { AddComponent } from './add/add.component';
+import { MY_ROUTES } from './app-routing';
+import { UserService } from './user.service';
+import { ListLinkComponent } from './link/list-link/list-link.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddComponent,
+    ListLinkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    MY_ROUTES,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,19 @@
+<div class="col-md-10">
+  <h2>URL詳細</h2>
+  <button class="btn btn-danger btn-sm" (click)="addUser()">URL登録</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>題材</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let link of links">
+        <td><a href="{{link.url}}">{{link.title}}</a></td>
+        <td><button class="btn btn-danger btn-sm" (click)="deleteUrl(link)">削除</button>
+          <button class="btn btn-danger btn-sm" (click)="editUrl(link)" style="margin-left: 20px;">修正</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
