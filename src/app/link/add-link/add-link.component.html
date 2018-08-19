@@ -1,0 +1,17 @@
+<div class="col-md-6">
+  <h2 class="text-center">リンク追加</h2>
+  <form [formGroup]="addForm">
+
+    <div class="form-group">
+      <label for="title">題材:</label>
+      <input formControlName="title" placeholder="タイトル" name="title" class="form-control" id="title">
+    </div>
+
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input formControlName="url" placeholder="ウェブサイトURL" name="url" class="form-control" id="url">
+    </div>
+    <button class="btn btn-success" (click)="onSubmit()">追加</button>
+  </form>
+  <hr>
+</div>

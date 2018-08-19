@@ -9,12 +9,16 @@ import { AddComponent } from './add/add.component';
 import { MY_ROUTES } from './app-routing';
 import { UserService } from './user.service';
 import { ListLinkComponent } from './link/list-link/list-link.component';
+import { EditLinkComponent } from './link/edit-link/edit-link.component';
+import { AddLinkComponent } from './link/add-link/add-link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
-    ListLinkComponent
+    ListLinkComponent,
+    EditLinkComponent,
+    AddLinkComponent
   ],
   imports: [
     BrowserModule,

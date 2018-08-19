@@ -6,8 +6,8 @@ import { Link } from './model/Link';
 })
 export class LinkService {
   constructor(private http: HttpClient) { }
-  // baseUrl = 'http://localhost:8080/api/items';
-  baseUrl = 'https://powerful-sierra-61218.herokuapp.com/api/link';
+  baseUrl = 'http://localhost:8080/api/link';
+  // baseUrl = 'https://powerful-sierra-61218.herokuapp.com/api/link';
 
   getLinks() {
     return this.http.get<Link[]>(this.baseUrl);
