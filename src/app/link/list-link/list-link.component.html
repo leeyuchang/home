@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let link of links">
+      <tr *ngFor="let link of links; trackBy: trackFn">
         <td><a href="{{link.url}}">{{link.title}}</a></td>
         <td>
           <button class="btn btn-danger btn-sm" (click)="deleteLink(link)">削除</button>

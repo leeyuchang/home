@@ -48,4 +48,8 @@ export class ListLinkComponent implements OnInit {
   addLink(): void {
     this.router.navigate(['add-link']);
   }
+
+  trackFn(index: any, link: any) {
+    return link.id;
+  }
 }

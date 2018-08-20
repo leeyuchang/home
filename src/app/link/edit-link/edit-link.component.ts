@@ -40,7 +40,7 @@ export class EditLinkComponent implements OnInit {
         alert('更新完了');
         this.router.navigate(['list-link']);
         // TODO:応答電文の確認用
-        console.log(data);
+        // console.log(data);
       },
       error => {
         alert(error);

@@ -8,7 +8,7 @@ import { User } from './model/user';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-  baseUrl = 'http://localhost:8080/api/user';
+  baseUrl = 'https://powerful-sierra-61218.herokuapp.com/api/user';
 
   getUsers() {
     return this.http.get<User[]>(this.baseUrl);
